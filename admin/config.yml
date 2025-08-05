@@ -1,17 +1,17 @@
 backend:
-  name: Podyujeong
-  repo: maeng  
-  branch: main
+  name: github
+  repo: Podyujeong/maeng  # 👉 자신의 GitHub 유저명/저장소 이름
+  branch: main  # 기본 브랜치 이름 (예: main)
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: static/uploads  # 이미지 업로드 경로 (저장소 안의 경로)
+public_folder: /uploads       # 이미지 접근 경로 (웹에서 접근하는 경로)
 
 collections:
-  - name: "posts" 
+  - name: "posts"
     label: "Posts"
     folder: "content/posts"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
