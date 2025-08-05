@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: Podyujeong/maeng  
+  name: Podyujeong
+  repo: maeng  
   branch: main
 
 media_folder: "static/uploads"
